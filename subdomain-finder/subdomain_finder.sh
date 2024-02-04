@@ -1,3 +1,5 @@
+export PATH=${PATH}:`go env GOPATH`/bin
+
 echo "" && echo -n "Enter domain: " && read domain
 
 gau --subs $domain | unfurl domains >> vul1.txt
@@ -25,3 +27,5 @@ echo "" && echo "Testing for domains running http server"
 cat unique_subs.txt | httpx -silent > unique_sub_http.txt
 
 echo "Saved to unique_sub_http.txt"
+
+export PATH=$PATH:/usr/local/go/bin
