@@ -2,9 +2,12 @@
 
 Install go -> https://go.dev/doc/install
 
-Add go path 
+Add go path
 
-`export PATH="$HOME/go/bin:$PATH"`
+```
+nano $HOME/.bashrc
+export PATH="$HOME/go/bin:$PATH"
+```
 
 Install dependencies
 
